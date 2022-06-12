@@ -1,7 +1,31 @@
+form {
+    --border-radius: 25px;
+    --nasa-red: #bf311b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
 
 .search-bar {
     height: 2rem;
-    border: 2px solid lightgray;
+    border: 1px solid lightgray;
+    border-radius: var(--border-radius);
+    font-size: 1.2rem;
+    font-family: monospace;
+    margin-right: 3rem;
+    padding: .2em .8em;
+}
+
+.search-button {
+    padding: .5em 2em;
     border-radius: 15px;
-    font-size: 18px;
+    background-color: var(--nasa-red);
+    border: 1px solid var(--nasa-red);
+    border-radius: var(--border-radius);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.1em;
+    font-family: monospace;
 }
