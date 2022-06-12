@@ -1,0 +1,7 @@
+
+.search-bar {
+    height: 2rem;
+    border: 2px solid lightgray;
+    border-radius: 15px;
+    font-size: 18px;
+}
