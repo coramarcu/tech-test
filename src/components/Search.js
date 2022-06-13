@@ -1,11 +1,19 @@
 import { useState } from 'react';
+import getImages from '../requests/getImages';
+import '../styles/Search.css';
 
 const Search = () => {
-    const [value, setValue] = useState(0);
+    const [value, setValue] = useState();
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        getImages(value);
+    }
+
 
     return (
         <>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <input
                     className='search-bar'
                     type="text"
